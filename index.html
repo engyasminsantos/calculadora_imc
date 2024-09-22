@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saúde e Cuidados Pessoais</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Saúde e Cuidados Pessoais</h1>
+            <nav>
+                <div class="menu-icon" id="menu-icon">
+                    ☰
+                </div>
+                <ul id="menu-list" class="menu-list">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#alimentacao">Alimentação</a></li>
+                    <li><a href="#exercicios">Exercícios</a></li>
+                    <li><a href="#saude-mental">Saúde Mental</a></li>
+                    <li><a href="#calculadora-imc">Calculadora de IMC</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio">
+        <div class="container">
+            <h2>Bem-vindo ao nosso site!</h2>
+            <p>Encontre aqui dicas sobre saúde, alimentação, exercícios físicos e muito mais.</p>
+        </div>
+    </section>
+
+    <section id="alimentacao">
+        <div class="container">
+            <h2>Alimentação Saudável</h2>
+            <p>Dicas para manter uma dieta equilibrada e saudável.</p>
+        </div>
+    </section>
+
+    <section id="exercicios">
+        <div class="container">
+            <h2>Exercícios Físicos</h2>
+            <p>Sugestões de exercícios para diferentes níveis de experiência.</p>
+        </div>
+    </section>
+
+    <section id="saude-mental">
+        <div class="container">
+            <h2>Saúde Mental</h2>
+            <p>Dicas para cuidar do bem-estar emocional e mental.</p>
+        </div>
+    </section>
+
+    <section id="calculadora-imc">
+        <div class="container">
+            <h2>Calculadora de IMC</h2>
+            <form id="imc-form">
+                <label for="peso">Peso (kg):</label>
+                <input type="number" id="peso" step="0.1" min="0" required>
+
+                <label for="altura">Altura (m):</label>
+                <input type="number" id="altura" step="0.01" min="0" required>
+
+                <button type="button" onclick="calcularIMC()">Calcular IMC</button>
+            </form>
+            <div id="resultado"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Saúde e Cuidados Pessoais. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
